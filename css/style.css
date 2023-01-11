@@ -1,0 +1,63 @@
+/*Colors used: 
+Primary Color (purple): #BA59ff;
+Secondary Color (blue): #22E6ff;
+Secondary Color (pink): #FF55ff;
+*/
+body {
+    background-color: #ffffff;
+    font-family: 'permanent marker', sans-serif;
+    font-size: 16px; 
+    font-weight: 300;
+    line-height: 1.6;
+    color: #000000  
+}
+h1, h2, h3, h4 {
+    line-height: 1.4
+}
+h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+}
+h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+}
+h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+}
+h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+}
+img {
+    width: 100%;
+  }
+  a {
+    color: #BA59ff;
+    text-decoration: none; /* No underlining */
+  }
+  a:visited { /* visited link */
+    color: #BA59ff;
+  }
+  a:active { /* selected link */
+    color: #7536a2;
+  }
+  a:hover {
+    color: #BA59ff;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+  .button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #BA59ff;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #7536a2; /* width of the border, type, color */
+    transition: 0.2s opacity
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+  }
+  
+ 
