@@ -75,4 +75,26 @@ img {
     background-color: #ba59ff;
     color: #ffffff;
   }
-  
+
+  /* Layout styling */
+  .container {
+    padding: 0 15px;
+  }
+  .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  }
+  .center {
+    text-align: center;
+  }
+  .logo {
+    max-width: 250px;
+  }
+  header {
+    background-color: #ffe4c4;
+    text-align: center;
+    padding: 10px 0;
+  }
+ ul {
+  list-style-type: none;
+  padding: 0;
+  }

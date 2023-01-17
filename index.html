@@ -10,8 +10,8 @@
         <title>Lydia Alfords UX Portfolio</title>
     </head>
         <body>
-            <header><!--navigation, add logo as a text link of image-->
-                <div>
+            <header>
+                <div class="container">
                 <svg version="1.0" encoding="UTF-8"?><svg id="_ÎÓÈ_1" xmlns="http://www.w3.org/2000/svg" 
                 viewBox="0 0 50 50"><defs><style>.cls-1{fill:#b35eff;}</style></defs><path class="cls-1" 
                 d="m32.62,8.7c2.62,1.12,3.79,4.25,2.61,7-3.79,8.54-7.58,17.08-11.36,25.63-1.92.01-10.67.06-13.12.08,
@@ -20,30 +20,32 @@
                 </svg>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About Lydia Alford</a></li>
+                        <li><a herf="index.html">Work</a></li>
+                        <li><a herf="about.html">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 </div>
             </header>
             <main>
-                <div>
-                    <div>
-                        <span><h1>Hi, I am Lydia.</h1></span>
-                        <p>I am a UX designer and researcher from Texas!</p>
-                    </div>
+            <div id="hero"><!--hero section-->
+                <div class="container">
+                    <span><h1 class="center">Hi, I am Lydia.</h1></span>
+                    <p>I am a UX designer and researcher from Texas!</p>
                 </div>
-                <div>
-                    <h2>My Work</h2>
-                </div>
-                <div>
-                    <picture><!--replace all images with real images-->
-                        <source srcset="img/plutopay/ppcover@1x.jpeg" media="(max-width:767px)">
-                        <img src="img/plutopay/ppcover@2x.jpeg" alt="PlutoPay Mockup">
-                    </picture>                                  
-                </div>
-                <div>
+            </div>
+            <!--work section-->
+            <div id="work">
+                <div class="container">
+                    <h2 class="center">My Work</h2>
+                    <div class="row"><!-- open row that holds (2) columns for project -->
+                    <div><!-- open first column (used for image) -->
+                        <picture class="logo">
+                            <source srcset="img/plutopay/ppcover@1x.jpeg" media="(max-width:767px)">
+                            <img src="img/plutopay/ppcover@2x.jpeg" alt="PlutoPay Mockup">
+                        </picture>
+                    </div><!--end first column-->
+                    <div><!--open second colum (used for text)-->
                     <h3>PlutoPay App</h3>
                     <p>The PlutoPay virtual wallet app was designed with the intent
                         of providing users with easy access to all their financial tools for making purchases
@@ -51,14 +53,14 @@
                         This app was created using Figma. 
                     </p>
                     <a href="plutopay.html">View Project</a>
-                </div>
-                <div>
-                    <picture>
-                        <source srcset="img/vocabulary_app/macover@1x.jpeg" media="(max-width:767px)">
-                        <img src="img/vocabulary_app/macover@2x.jpeg" alt="Merit Vocabulary Mockup">
-                    </picture>                                  
-                </div>
-                <div>
+                    </div><!--end second column-->
+                    <div class="row"><!-- open first column (used for image) -->
+                        <picture>
+                            <source srcset="img/vocabulary_app/macover@1x.jpeg" media="(max-width:767px)">
+                            <img src="img/vocabulary_app/macover@2x.jpeg" alt="Merit Vocabulary Mockup">
+                        </picture>
+                    </div><!--end first column-->
+                    <div><!--open second colum (used for text)-->                            
                     <h3>Merit Vocabulary App</h3>
                     <p>Merit Vocabulary was developed to encourage users to learn 
                         outside of the classroom space. The primary objective was 
@@ -66,18 +68,20 @@
                         card sorting, user testing, wireframing, and mockups using 
                         Adobe XD.
                     </p>
-                    <a href="#">View Project</a>
+                        <a href="#">View Project</a>
+                    </div><!--end second column-->
+                    </div><!-- end of row that holds (2) columns for project -->
                 </div>
+            </div>
             </main> 
         <footer id="contact"> 
-            <div>
-                <h2>Get in Touch</h2>
+            <div class="container">
+                <h2 class="center">Get in Touch</h2>
                 <p>Do you like my work and want to discuss opportunities? 
                     Please get in touch. Call: <a href="tel:+491234567">+49 1234567</a> 
                     or Skype me at <a href="skype:lydiauxaccount">hello.careerfoundry</a>.
                     <a href="mailto:lydiasuxdesign@gmail.com"class="button contact">Send an email</a>
                 </p>
-                <div>
                     <a href="https://www.behance.net/lydiaalford1/" target="_blank">
                         <svg id="_ÎÓÈ_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><defs><style>.cls-1{letter-spacing:.02em;}.cls-2{fill:#ba59ff;}.cls-3{fill:#fff;font-family:Roboto-Black, Roboto;font-size:48px;font-weight:800;}</style></defs><text class="cls-3" transform="translate(-41.62 -11.75)"><tspan x="0" y="0">A</tspan><tspan class="cls-1" x="32.7" y="0">r</tspan><tspan x="52.05" y="0">tboard 10_Logo</tspan></text><text class="cls-3" transform="translate(-53.62 88.25)"><tspan x="0" y="0">A</tspan><tspan class="cls-1" x="32.7" y="0">r</tspan><tspan x="52.05" y="0">tboard 11_Logo</tspan></text><path class="cls-2" d="m21.2,29.35c0,2.02-1.47,2.66-3.27,2.66h-4.73v-5.54h4.82c1.95.01,3.18.82,3.18,2.88h0Zm-.81-8.63c0-1.86-1.44-2.3-3.03-2.3h-4.15v4.7h4.48c1.58,0,2.7-.69,2.7-2.4h0Zm13.87,2.43c-1.92,0-3.2,1.19-3.32,3.11h6.52c-.18-1.94-1.18-3.11-3.2-3.11h0Zm14.35-16.13v36.89c0,2.78-2.25,5.03-5.03,5.03H6.69c-2.78,0-5.03-2.25-5.03-5.03V7.03c0-2.78,2.25-5.03,5.03-5.03h36.89c2.78,0,5.03,2.25,5.03,5.03Zm-18.48,11h8.15v-1.98h-8.15v1.98Zm-4.51,11.56c0-2.53-1.19-4.71-3.67-5.41,1.8-.86,2.75-1.86,2.75-3.88,0-4-2.99-4.98-6.43-4.98h-9.48v20.12h9.76c3.66-.02,7.08-1.77,7.08-5.86Zm15.86-1.55c0-4.31-2.53-7.9-7.08-7.9s-7.45,3.33-7.45,7.71,2.86,7.65,7.45,7.65c3.48,0,5.73-1.56,6.82-4.9h-3.53c-.39,1.25-1.95,1.9-3.17,1.9-2.35,0-3.57-1.37-3.57-3.7h10.5c.01-.24.03-.5.03-.75h0Z"/></svg>
                     </a>
@@ -85,8 +89,8 @@
                     <a href="https://www.linkedin.com/in/lydiarachelalford/" target="_blank">
                         <svg id="_ÎÓÈ_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><defs><style>.cls-1{letter-spacing:.02em;}.cls-2{fill:#ba59ff;}.cls-3{fill:#fff;font-family:Roboto-Black, Roboto;font-size:48px;font-weight:800;}</style></defs><text class="cls-3" transform="translate(-60.62 -11.75)"><tspan x="0" y="0">A</tspan><tspan class="cls-1" x="32.7" y="0">r</tspan><tspan x="52.05" y="0">tboard 11_Logo</tspan></text><path class="cls-2" d="m46.3.93H4.87c-1.9,0-3.44,1.56-3.44,3.48v41.35c0,1.92,1.54,3.48,3.44,3.48h41.42c1.9,0,3.45-1.56,3.45-3.48V4.41c0-1.92-1.55-3.48-3.45-3.48Zm-30.26,41.41h-7.16v-23.06h7.17v23.06h-.01Zm-3.58-26.21c-2.3,0-4.15-1.87-4.15-4.15s1.85-4.15,4.15-4.15,4.15,1.87,4.15,4.15-1.85,4.15-4.15,4.15Zm30.42,26.21h-7.16v-11.22c0-2.67-.05-6.11-3.72-6.11s-4.3,2.91-4.3,5.92v11.41h-7.16v-23.06h6.87v3.15h.1c.96-1.81,3.3-3.72,6.78-3.72,7.25,0,8.6,4.78,8.6,10.99v12.64Z"/></svg>
                     </a>
-                    <p>Copyright Lydia-Alford 2022</p>
-                </div>
+                <p>Copyright Lydia-Alford 2022</p>
+            </div>
         </footer>
     </body>      
 </html>
