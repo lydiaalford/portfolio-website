@@ -94,8 +94,33 @@ img {
     text-align: center;
     padding: 10px 0;
   }
- nav > ul > li  {
+ nav > ul > li {
   display: inline-block;
   list-style-type: none;
-  padding: 0;
+  padding: 015px;
  }
+ nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:visited {
+  color:#ba59ff;
+}
+nav > ul > li > a:hover {
+  color: #7536a2;
+  text-decoration: none; 
+}
+nav > ul > li > a:active {
+  color: #7536a2;
+  text-decoration: none; 
+}
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 5px 5px 5px 0px rgba(117, 117, 117, 0.75);
+  position: relative; 
+}
