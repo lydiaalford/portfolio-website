@@ -17,7 +17,6 @@ Secondary Colors (blue): #22e6ff & (pink) #ff55ff;
 */
 .arial {font-family: Arial; }
 h1, h2, h3, h4 {
-    text-align: center;
     line-height: 1.4
 }
 h1 {
@@ -88,20 +87,15 @@ img {
   /* Layout styling */
   .container {
     padding: 0 15px;
-    text-align: center;
   }
   .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
-  }
-  .center {
-    text-align: center;
   }
   .logo {
     max-width: 250px;
   }
   header {
     background-color: #efc4ffa2;
-    text-align: center;
     padding: 10px 0;
   }
  nav > ul > li {
@@ -137,14 +131,58 @@ ul > li {
 }
 #hero {
   background-color: #efc4ffa2;
+  text-align: center;
   padding: 20px 0;
-  display: inline-block;
+  display: block;
   width: 100%;
   box-shadow: 5px 5px 5px 0px rgba(117, 117, 117, 0.75);
-  position: relative; 
+  position: relative;
 }
 footer { 
   background-color: #efc4ffa2;
   text-align: center;
   padding: 10px 0;
+}
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+}
+header {
+  text-align: unset;
+  padding: 20px 0 99px;
+  font-size: 18px;
+}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#about-page h3 { margin-top: 0;}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
