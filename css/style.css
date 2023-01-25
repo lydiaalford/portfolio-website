@@ -63,6 +63,7 @@ img {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #ba59ff;
     color: #ffffff; /* needed to override the default link color */
+    font-family: Arial;
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
@@ -193,8 +194,49 @@ Large devices (1024px or larger)
 }
 @media only screen and (min-width: 1024px) {
 }
+.button {
+  display: inline-block;
+  background-color: #ba59ff;
+  color: white !important;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #7536a2;
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8;
+}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+}
+
+/* ==============================
+animation
+================================= */
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
